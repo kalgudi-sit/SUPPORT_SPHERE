@@ -10,6 +10,8 @@ export async function GET(request) {
     }
 }
 
+
+// General POST Method
 export async function POST(request) {
     try {
         const body = await request.json();
@@ -20,3 +22,5 @@ export async function POST(request) {
         return NextResponse.json({ status: 500}, { message: error});
     }
 }
+
+
